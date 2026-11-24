@@ -1,0 +1,17 @@
+### Ver que la API responde
+GET http://127.0.0.1:5077/
+
+### Listar productos
+GET http://127.0.0.1:5077/productos
+
+### Pedir un producto que existe
+GET http://127.0.0.1:5077/productos/1
+
+### Pedir un producto que no existe (404)
+GET http://127.0.0.1:5077/productos/99
+
+### Crear un producto (201)
+POST http://127.0.0.1:5077/productos
+Content-Type: application/json
+
+{ "nombre": "Monitor", "stock": 4 }
